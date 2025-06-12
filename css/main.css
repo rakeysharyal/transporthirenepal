@@ -319,7 +319,7 @@ box-shadow: 0 1px 7px 1px #B3B3B3;
 i[class*=" ratings_"], i[class^=ratings_] {
     display: inline-block;
     line-height: 1;
-    font-family: fontawesome;
+    font-family: icomoon;
     font-style: normal;
     position: relative;
     white-space: nowrap;
@@ -328,7 +328,7 @@ i[class*=" ratings_"], i[class^=ratings_] {
 }
 
 i[class*=" ratings_"]:before, i[class^=ratings_]:before {
-    content: "\f005 \f005 \f005 \f005 \f005";
+    content: "\e9d9 \e9d9 \e9d9 \e9d9 \e9d9";
 }
 
 
