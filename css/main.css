@@ -1,0 +1,516 @@
+:root {
+  --th-color-primary: #3f51b5;   /* Example: Bootstrap's green */
+  --th-color-secondary: #088b00; /* Example: Bootstrap's gray */
+}
+
+
+
+body{
+/*	font-family: 'Poppins', sans-serif;*/
+font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+	color: rgb(17 24 39 / 0.76);
+}
+
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1200px;
+    }
+}
+
+#header{
+	padding: 20px 0px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+	font-weight: 700;
+	color:#333;
+	font-size: 16px;
+	padding-right: 0.9rem;
+	padding-left: 0.9rem;
+}
+
+.logo{
+	color:#3f51b5;
+	display: flex;
+	flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.logo h3{
+	font-weight: 900;
+}
+.logo h3 span{
+	color:#333;
+}
+.account a{
+	font-size: 16px;
+}
+
+#banner{ 
+	min-height:350px;
+/*	background-color: #3f51b5;*/
+	padding: 60px 0px;
+
+
+/*	background: url(../img/banner-1.jpg) #3f51b5 no-repeat ;*/
+
+background: url(../img/road.svg) #333 no-repeat ;
+	
+	background-size: 20%;
+	background-position: right;
+	position: relative;
+	z-index: 50;
+	position: relative;
+}
+
+
+#banner .banner-img{
+	position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .9;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+
+}
+
+#banner .banner-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+#banner:before{
+	position: absolute;
+	content: "";
+	top:0px;
+	right:0px;
+	left:0px;
+	bottom: 0px;
+	background-color: #0d101e9c ;
+	z-index: 60;
+
+}
+
+#search-shuttle{
+	position: relative;
+	padding: 45px 35px;
+	background-color: #dfdfdf;
+	border-radius: 10px;
+	z-index: 70;
+}
+#search-shuttle .search-shuttle-badge{
+	position: absolute;
+	top: -22px;
+	left: 0px;
+	right: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.shuttle-badge-inner{
+	max-width: 300px;
+	border-radius: 6px;
+	background: var(--th-color-primary);
+	padding: 10px 25px;
+	color: #fff;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+
+}
+.shuttle-badge-inner span{
+	font-weight: 700;
+	font-size: 0.875rem;
+}
+
+#search-shuttle .form-control,.form-select{
+	padding: .75rem 1rem;
+	border: 1px solid #b3b3b3;
+	font-size: 15px;
+	-webkit-box-shadow: 0 1px 4px 1px #C7C7C7;
+box-shadow: 0 1px 4px 1px #C7C7C7;
+transition: .3s all;
+/*min-height: 56px;*/
+min-height: 50px;
+color: #6c757d;
+}
+
+#search-shuttle .form-control:focus{
+	-webkit-box-shadow: 0 1px 7px 1px #B3B3B3;
+box-shadow: 0 1px 7px 1px #B3B3B3;
+	transition: .3s all;
+}
+
+#search-shuttle .form-control::placeholder,#search-shuttle .form-select::placeholder {
+  font-size: 0.875rem;
+  color: #6c757d; /* Bootstrap's secondary text color */
+}
+
+
+
+#banner .b-text-container{
+	position: relative;
+	z-index: 80;
+	color: #fff;
+	margin-left: 60px;
+
+}
+
+#banner .b-text-container h2{
+	font-weight: 700;
+	font-size: 3rem;
+	letter-spacing: 1px;
+}
+
+#banner .b-text-container h2 span{
+	color:#088b00;
+}
+
+.btn-yt{
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.bg-body-tertiary{
+	background-color: #fff !important;
+}
+
+#banner .customer-care-info{
+	color: #fff;
+	z-index: 80;
+	margin-left: 60px;
+}
+#banner .customer-care-info img{
+	border-radius: 6px;
+}
+
+#banner .customer-care-info .c-text p{
+	color: #088b00;
+}
+
+#banner .customer-care-info a{
+	color: #fff;
+	text-decoration: none;
+}
+
+#featured-section{
+	padding: 120px 0px;
+	background: url(../img/taxi.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	overflow: hidden;
+	position: relative;
+	z-index: 50;
+}
+#featured-section:before{
+	position: absolute;
+	content: "";
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background:#00000042;
+	z-index: 60;
+}
+
+#featured-section>*{
+	position: relative;
+	z-index: 70;
+	color: #fff;
+	
+}
+
+.featured-section-title{
+	width: 700px;
+	margin: 0px auto;
+	text-align: center;
+}
+.featured-section-title h2{
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-bottom: 40px;
+	text-shadow: 0px 1px 1px #000;
+}
+.btn-yt-lg{
+	font-weight: 700;
+	padding: 10px 45px;
+}
+
+#airport-section{
+	padding: 80px 0px;
+	border-top: 1px solid #ececec;
+}
+.a-box{
+	text-align: center;
+	padding: 15px;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .3019607843);
+    background: #fff;
+    border: 1px solid rgb(222 222 222 / 30%);
+}
+.a-box figure{
+	margin: 0px;
+	height: 300px;
+}
+.a-box figure img{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 10px 10px 10px 10px;
+}
+.a-box a{
+	text-decoration: none;
+}
+.a-box a h3{
+	margin:15px 0px 10px 0px;
+	color: #333;
+	font-size: 1.2rem;
+	font-weight: 900;
+	letter-spacing: 1px;
+}
+
+.a-box a span.country{
+	color:#fff;
+	background: #4050b5;
+	padding: 4px 15px;
+	border-radius: 4px;
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+
+.a-box .a-box-text{
+	padding: 20px 25px;
+}
+.meta-info .info-1{
+	line-height: 1;
+	text-align: left;
+}
+.meta-info .info-1 p{
+	margin: 0px;
+}
+.meta-info .info-1 p {
+    color:#1c2243;
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 7px;
+}
+
+.meta-info .info-1 span{
+	font-size: 0.875rem;
+    font-weight: 600;
+    color: #838383;
+}
+
+.trip-reviews {
+    font-size: 15px;
+    color: #838383;
+}
+
+.trip-reviews ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+i[class*=" ratings_"], i[class^=ratings_] {
+    display: inline-block;
+    line-height: 1;
+    font-family: fontawesome;
+    font-style: normal;
+    position: relative;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    color: #1a8754;
+}
+
+i[class*=" ratings_"]:before, i[class^=ratings_]:before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+}
+
+
+#footer{
+	padding: 40px 0px 0px 0px;
+}
+
+#footer .footer-bottom{
+	margin-top: 30px;
+	padding: 10px 0px;
+	background: #fff;
+}
+#footer .footer-bottom p{
+	margin: 0px;
+}
+
+.bottom ul{
+	list-style: none;
+	padding-left: 0px;
+}
+
+.bottom ul li{
+	padding: 4px 0px;
+}
+
+.bottom ul li a{
+	display: block;
+	color:#333;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.form-label{
+	font-weight: 700;
+	font-size: 0.875rem;
+}
+
+
+#map {
+  height: 600px;
+}
+
+
+.testimonial-section{
+	padding: 60px 0px;
+	color: #60626f;
+	background: #eeeeee;
+	
+}
+
+.testimonial-text i{
+	font-size: 1.3rem;
+	margin-right: 10px;
+	color: #098b00;
+	vertical-align: middle;
+}
+
+.rating i{
+	color:#f90;
+	font-size: 1.2rem;
+}
+.testimonial-text{
+	font-size: 0.875rem;
+	line-height: 1;
+/*	background: #dadada;*/
+    border-radius: 30px;
+    max-width: 960px;
+}
+.testimonial-text span{
+	font-weight: 700;
+}
+
+.about{
+	padding: 80px 0px;
+}
+
+.about h2{
+	font-weight: 900;
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+}
+.about img{
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+img{
+	    border-radius: 10px;
+}
+.object-cover {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.w-full{
+	width: 100%;
+}
+.h-full {
+    height: 100%;
+}
+.how-it-works{
+	padding: 40px 0px 80px 0px;
+
+}
+.h-wrapper{
+	display: flex;
+	flex-flow: column;
+	background: #ececec;
+	padding: 60px;
+	border-radius: 20px;
+}
+
+.h-wrapper h2{
+	font-weight: 900;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.h-wrapper .h-inner{
+	display: flex;
+}
+
+.h-wrapper .h-inner>*{
+	flex: 0 0 33%;
+}
+
+.h-wrapper .h-inner h3{
+	font-size: 1rem;
+	font-weight: 700;
+}
+.h-wrapper .h-inner .h-box{
+	padding: 0px 10px;
+}
+.h-wrapper .h-inner .icon{
+	width: 50px;
+	height: 50px;
+	background: #1a8754;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-weight:900;
+}
+.h-wrapper .h-inner p{
+	font-size: 14px;
+	color: #696969;
+}
+
+.block h2{
+	font-weight: 900;
+}
+.block p{
+	color: #838383;
+}
+
+
+/*=== icomoon ====*/
+/* General icon placement inside inputs */
+.icon-field {
+   font-family: 'IcoMoon'; /* Your actual icon font name */
+   position: absolute;
+   left: 25px;
+   top: 56px;
+   transform: translateY(-50%);
+   font-size: 1rem;
+   color: #9d9d9d;
+   pointer-events: none;
+   z-index: 10;
+}
+
+/* Add left padding to inputs and selects */
+.input-with-icon {
+   padding-left: 2.25rem !important;
+}
+
+/* Special case for textareas since vertical height is larger */
+.textarea-icon {
+   top: 3.35rem; /* Adjust this as needed for perfect vertical alignment */
+}
+
+.btn-th-primary{
+	color: #fff;
+	background: var(--th-color-secondary);
+	border-color: var(--th-color-secondary);
+}
+
