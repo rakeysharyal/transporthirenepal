@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yoho Transfer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="fontawesome-free/css/all.css">
+  <link rel="stylesheet" type="text/css" href="icomoon/style.css">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+
+
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw9f3J0Kx3hmHa2CGKFu7h3TK731TXpf4&callback=initMap&libraries=places&v=weekly"
+  defer
+  ></script>
+
+
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 d-flex align-items-center">
+          <div class="logo">
+            <h3>Transport<span>Hire Nepal</span></h3>
+          </div>
+        </div>
+
+        <div class="col-md-8 col-sm-6">
+
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <!-- <a class="navbar-brand" href="#">Yoho Transfer</a> -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto justify-content-between">
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Make a Booking</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Why choose us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Our Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                  </li>
+
+
+
+                </ul>
+
+                <div class="account">
+                  <a class="btn btn-success btn-yt" href="#">Plan a Trip</a>
+                </div>
+
+
+
+
+                
+
+
+
+              </div>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="banner">
+
+    <div class="banner-img">
+
+      <picture>
+        <source srcset="img/hero-bg.svg" media="(min-width: 800px)">
+          <source srcset="img/hero-bg.svg" media="(min-width: 400px)">
+            <img src="img/hero-bg.svg" alt="Responsive example">
+          </picture>
+
+        </div>
+
+
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-5">
+
+
+              <div id="search-shuttle">
+
+               <div class="row mb-3">
+
+                <div class="col">
+                  <label for="from" class="form-label">Pickup Location</label>
+                  <input type="text" class="form-control" id="from" placeholder="From">
+                </div>
+                <div class="col">
+                  <label for="to" class="form-label  ">Drop Off Location</label>
+                  <input type="text" class="form-control" id="to" placeholder="To">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <div class="col">
+                  <label for="formGroupExampleInput" class="form-label  ">Travel Date</label>
+                  <input type="date" class="form-control" aria-label="Date">
+                </div>
+                <div class="col">
+                  <label for="formGroupExampleInput" class="form-label  ">Vehicle</label>
+                  <select class="form-select" aria-label="">
+                    <option value="car">Car</option>
+                    <option value="jeep">Jeep</option>
+                    <option value="bus">Bus</option>
+                  </select>
+                </div>
+
+              </div>
+
+
+              <div class="mb-3">
+                <label for="passenger" class="form-label  ">Passenger</label>
+                <input type="number" class="form-control" id="passenger" minlength="1" placeholder="No of Passengers">
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label  ">Message</label>
+                <textarea type="text" class="form-control" id="message" placeholder="Message" rows="3"></textarea>
+              </div>
+
+              <div class="d-grid">
+                <button type="submit" class="btn btn-success btn-yt-lg">Send Inquiry</button>
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <div class="col-md-7 d-flex flex-column justify-content-center">
+
+
+
+            <div class="b-text-container">
+              <h2>Ride with <span>Comfort and Convenience!</span></h2>
+              <p>Experience a seamless voyage with our Airport Shuttle Service, where comfort and convenience take flight.</p>
+            </div>
+
+            <div class="customer-care-info d-flex align-items-center gap-3 mt-2 d-xxl-flex"> 
+              <img width="70" height="70"
+              src="img/expert.webp"
+              alt="customer care" />
+              <div class="c-text">
+                <p class="m-0 fw-bold fs-6"> Need assistance ?</p> 
+                <span class="d-block fw-normal">Speak with Our Travel Expert</span> 
+                <a class="fw-bolder" target="_blank" href="#">+977 9818000000</a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section">
+      <div class="container">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+
+
+          <img src="img/tripadv.png" class="img-flud">
+
+
+          <div class="trip-reviews pb-1 text-center py-2"><ul><li class="ratings"><i class="ratings__5"></i>
+           <span>Rated</span> By hundreds of travelers</li></ul></div>
+
+
+          <!-- <div class="text-center rating py-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+
+          <span>Rated by thousands of travelers</span> -->
+
+        </div>
+        <div class="testimonial-text-wrapper d-flex justify-content-center align-items-center">
+          <div class="testimonial-text d-flex justify-content-center align-items-center mt-4 border-top">
+            <div class="py-2 px-4">
+              <i class="fa-solid fa-handshake"></i>
+              <span>Trusted by Millions</span>
+            </div>
+            <div class="py-2 px-4">
+              <i class="fa-solid fa-headset"></i>
+              <span>24/7 Support Service</span>
+            </div>
+            <div class="py-2 px-4">
+              <i class="fa-solid fa-hands-holding-circle"></i>
+              <span>Personalized & Safe</span>
+            </div>
+            <div class="py-2 px-4">
+              <i class="fa-solid fa-file-pdf"></i>
+              <span>Transfer Guide</span>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <span class="d-block fw-bold mb-2">Transport Hire Nepal, at your door</span>
+            <h2>Who We Are?</h2>
+            <p>Transport Hire Nepal is a leading transportation provider dedicated to offering safe, efficient, and cost-effective travel solutions across Nepal. Whether you are a tourist exploring the Himalayas, a trekking group heading to a remote trailhead, or a local needing a dependable ride, Transport Hire Nepal ensures your journey is smooth and comfortable.</p>
+            <p>Book your private chauffeur in seconds and enjoy a premium travel experience tailored to your schedule. Reliable, comfortable, and stress-free transportation is now easier than ever. Arrive at your destination refreshed, relaxed, and always on time.
+
+            </p>
+          </div>
+          <div class="col-md-5 offset-md-1">
+            <img src="img/mountain.jpg" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="how-it-works">
+      <div class="container">
+        <div class="h-wrapper">
+          <h2 class="mb-4">How does it works</h2>
+          <div class="h-inner">
+
+            <div class="h-box">
+              <div class="icon">
+                1
+              </div>
+              <h3 class="mt-3">Enter your route and select the vehicle</h3>
+              <p>Provide your travel details in the search field, then select the vehicle that best suits your needs.</p>
+            </div>
+
+            <div class="h-box">
+              <div class="icon">
+                2
+              </div>
+              <h3 class="mt-3">Complete Booking Form</h3>
+              <p>Fill in the lead passenger’s information, add any optional extras, proceed to payment, and receive your booking confirmation instantly.</p>
+            </div>
+
+            <div class="h-box">
+              <div class="icon">
+                3
+              </div>
+              <h3 class="mt-3">Meet Your Driver</h3>
+              <p>You’ll receive your driver’s contact details 6 hours before your pickup. The driver will be on-site, holding a sign with your name.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="airport-section">
+      <div class="container">
+        <div class="block">
+          <h2 class="text-uppercase">Top-Rated Nepal Tours</h2>
+          <p>Carefully crafted for unforgettable journeys through the heart of the Himalayas.</p>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-4 col-sm-6">
+            <div class="a-box">
+              <a href="#">
+                <figure>
+                  <img src="img/ebc.jpg" class="img-fluid">
+                </figure>
+                <div class="a-box-text">
+                 <span class="country">Most Popular</span>
+                 <h3>Everest Base Camp Trek</h3>
+
+
+                 <div class="trip-reviews pb-1 text-center"><ul><li class="ratings"><i class="ratings__5"></i>
+                  of <span>30</span> customer reviews</li></ul></div>
+                  
+
+
+                  <div class="meta-info d-flex justify-content-center gap-3 mt-4">
+                    <div class="duration info-1">
+                      <span>Duration</span>
+                      <p>12 Days</p> 
+                      
+                    </div> 
+
+                    <div class="price info-1">
+                      <span>From</span>
+                      <p>US$ 10</p> 
+                      
+                    </div> 
+                    
+                  </div>
+                </div>
+
+
+              </a>
+
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="a-box">
+              <a href="#">
+                <figure>
+                  <img src="img/culture.jpg" class="img-fluid">
+                </figure>
+                <div class="a-box-text">
+                 <span class="country">History of Nepal</span>
+                 <h3>Kathmandu Sightseeing</h3>
+
+
+                 <div class="trip-reviews pb-1 text-center"><ul><li class="ratings"><i class="ratings__5"></i>
+                  of <span>30</span> customer reviews</li></ul></div>
+                  
+
+
+                  <div class="meta-info d-flex justify-content-center gap-3 mt-4">
+                    <div class="duration info-1">
+                      <span>Duration</span>
+                      <p>1 Day</p> 
+                      
+                    </div> 
+
+                    <div class="price info-1">
+                      <span>From</span>
+                      <p>US$ 40</p> 
+                      
+                    </div> 
+                    
+                  </div>
+                </div>
+
+
+              </a>
+
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6">
+            <div class="a-box">
+              <a href="#">
+                <figure>
+                  <img src="img/ebc.jpg" class="img-fluid">
+                </figure>
+                <div class="a-box-text">
+                 <span class="country">Best Selling</span>
+                 <h3>Bird Watching Tour in Nepal</h3>
+
+
+                 <div class="trip-reviews pb-1 text-center"><ul><li class="ratings"><i class="ratings__5"></i>
+                  of <span>30</span> customer reviews</li></ul></div>
+
+
+
+                  <div class="meta-info d-flex justify-content-center gap-3 mt-4">
+                    <div class="duration info-1">
+                      <span>Duration</span>
+                      <p>1 Day</p> 
+
+                    </div> 
+
+                    <div class="price info-1">
+                      <span>From</span>
+                      <p>US$ 10</p> 
+
+                    </div> 
+                    
+                  </div>
+                </div>
+
+
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    
+
+
+    <section id="featured-section" >
+      <div class="container">
+        <div class="featured-section-title">
+          <h2>Your hassle-free ride to and from the airport – we've got your journey covered.</h2>
+          <a href="#" class="btn btn-success btn-yt-lg">Contact us</a>
+        </div>
+      </div>
+    </section>
+
+    <div id="map"></div>
+
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-3">
+            <div class="bottom">
+              <ul>
+                <li><a href="#">Airport Transfers</a></li>
+                <li><a href="#">Hotel Transfers</a></li>
+                <li><a href="#">Car Rental</a></li>
+                <li><a href="#">Tours</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="bottom">
+              <ul>
+                <li><a href="#">Manage Booking</a></li>
+                <li><a href="#">Help Centre</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+                <li><a href="#">Refund & Cancellations</a></li>
+
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="col-md-3">
+            <div class="bottom">
+              <ul>
+                <li><a href="#">Travel Agents</a></li>
+                <li><a href="#">Reviews and Testimonials</a></li>
+                <li><a href="#">Investor</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Careers</a></li>
+
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <section class="footer-bottom">
+        <div class="container">
+          <p>&copy Copyright Yoho Transfer - All Right Reserve</p>
+        </div>
+      </section>
+    </footer>
+
+
+
+    <script type="text/javascript">
+
+      function initMap() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+          mapTypeControl: false,
+          center: { lat: 27.7172, lng: 85.3240 },
+          zoom: 13,
+        });
+
+        new AutocompleteDirectionsHandler(map);
+      }
+
+
+      function calcRoute(originPlace,destinationPlace) {
+        var request = {
+      origin: originPlace, // Ill add both places later
+      destination: destinationPlace,
+      travelMode: google.maps.TravelMode.DRIVING
+    };
+    directionsService.route(request, function(response, status) {
+      if (status == google.maps.DirectionsStatus.OK) {
+        directionsDisplay.setDirections(response);
+      }
+    });
+  }
+
+
+  class AutocompleteDirectionsHandler {
+    map;
+    originPlaceId;
+    destinationPlaceId;
+    travelMode;
+    directionsService;
+    directionsRenderer;
+    constructor(map) {
+      this.map = map;
+      this.originPlaceId = "";
+      this.destinationPlaceId = "";
+      this.travelMode = google.maps.TravelMode.WALKING;
+      this.directionsService = new google.maps.DirectionsService();
+      this.directionsRenderer = new google.maps.DirectionsRenderer();
+      this.directionsRenderer.setMap(map);
+
+      const originInput = document.getElementById("from");
+      const destinationInput = document.getElementById("to");
+      const modeSelector = document.getElementById("mode-selector");
+    // Specify just the place data fields that you need.
+      const originAutocomplete = new google.maps.places.Autocomplete(
+        originInput,
+        { fields: ["place_id"] },
+        );
+    // Specify just the place data fields that you need.
+      const destinationAutocomplete = new google.maps.places.Autocomplete(
+        destinationInput,
+        { fields: ["place_id"] },
+        );
+
+      this.setupClickListener(
+        "changemode-walking",
+        google.maps.TravelMode.WALKING,
+        );
+    // this.setupClickListener(
+    //   "changemode-transit",
+    //   google.maps.TravelMode.TRANSIT,
+    // );
+    // this.setupClickListener(
+    //   "changemode-driving",
+    //   google.maps.TravelMode.DRIVING,
+    // );
+
+      this.setupPlaceChangedListener(originAutocomplete, "ORIG");
+      this.setupPlaceChangedListener(destinationAutocomplete, "DEST");
+    // this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(originInput);
+    // this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(
+    //   destinationInput,
+    // );
+    // this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(modeSelector);
+    }
+  // Sets a listener on a radio button to change the filter type on Places
+  // Autocomplete.
+    setupClickListener(id, mode) {
+      const radioButton = document.getElementById(id);
+
+    // radioButton.addEventListener("click", () => {
+    //   this.travelMode = mode;
+    //   this.route();
+    // });
+
+      this.travelMode = google.maps.TravelMode.DRIVING;
+      this.route();
+
+    }
+    setupPlaceChangedListener(autocomplete, mode) {
+      autocomplete.bindTo("bounds", this.map);
+      autocomplete.addListener("place_changed", () => {
+        const place = autocomplete.getPlace();
+
+        if (!place.place_id) {
+          window.alert("Please select an option from the dropdown list.");
+          return;
+        }
+
+        if (mode === "ORIG") {
+          this.originPlaceId = place.place_id;
+        } else {
+          this.destinationPlaceId = place.place_id;
+        }
+
+        this.route();
+      });
+    }
+    route() {
+      if (!this.originPlaceId || !this.destinationPlaceId) {
+        return;
+      }
+
+      const me = this;
+
+      this.directionsService.route(
+      {
+        origin: { placeId: this.originPlaceId },
+        destination: { placeId: this.destinationPlaceId },
+        travelMode: this.travelMode,
+      },
+      (response, status) => {
+        if (status === "OK") {
+          me.directionsRenderer.setDirections(response);
+        } else {
+          window.alert("Directions request failed due to " + status);
+        }
+      },
+      );
+    }
+  }
+
+  window.initMap = initMap;
+
+
+
+
+</script>
+
+
+</body>
+</html>
